@@ -1,0 +1,15 @@
+<div>
+    <child-component #child></child-component>
+    <div class="container">
+        <button type="button" class="btn btn-warning" (click)="childData.selectedCategory('Color')">Colors</button>
+        <button type="button" class="btn btn-success" (click)="childData.selectedCategory('Fruit')">Fruits</button>
+        <button type="button" class="btn btn-danger" (click)="childData.selectedCategory('Animal')">Animals</button>
+    </div>
+    <p *ngIf="userItem" class="para">Selected item is {{userItem}}</p>
+    <hr />
+    <div>
+        <app-child [selectCategory]="userSelection" (selectedItem)="getItem($event)"></app-child>
+       
+    </div>
+</div>  
+

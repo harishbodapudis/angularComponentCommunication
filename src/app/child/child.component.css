@@ -1,0 +1,27 @@
+.items-box {
+   
+    list-style-type:none;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content: center;
+    width:80%;
+    margin:auto;
+}
+.item {
+    margin:20px;
+    border:1px solid lightskyblue;
+    padding:5px 10px;
+    font-size:14px;
+    border-radius:5px;
+    color:coral;
+    cursor:pointer;
+}
+
+.reset-btn {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:40px 0px;
+}

@@ -1,0 +1,17 @@
+<div>
+    <p>{{selectCategory}}{{finalData.length}}</p>
+    <!-- <ul class="items-box" *ngIf="!selectCategory">
+        <li *ngFor="let items of  dataBox" class="item" (click)="setEmit(items.item)">{{items.item}}</li>
+    </ul>
+    <ul class="items-box" *ngIf="selectCategory">
+        <li *ngFor="let items of  dataBox" (click)="setEmit(items.item)">
+            <span class="item"  *ngIf="items.type === selectCategory">{{items.item}}</span>
+        </li>
+    </ul> -->
+    <ul class="items-box">
+        <li *ngFor="let items of  finalData" class="item" (click)="setEmit(items.item)">{{items.item}}</li>
+    </ul>
+    <div class="reset-btn">
+        <button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
+    </div>
+</div>
